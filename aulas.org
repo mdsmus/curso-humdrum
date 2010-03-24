@@ -1,0 +1,31 @@
+#+STARTUP: hidestars
+
+* aula 01: 17 mar
+** introdução a humdrum
+* aula 02: 24 mar
+** recursos humdrum na internet
+   http://humdrum.ccarh.org/
+** trabalho final: entrega e apresentação dia 16 jun
+** apresentação comandos: [[http://humdrum.org/Humdrum/commands/yank.html][yank]] e [[http://humdrum.org/Humdrum/commands/extract.html][extract]]
+** exemplo de uso (desktop): comparação quartetos
+   [[/home/kroger/Documents/bin/humdrum-tools.sh][humdrum-tools.sh]] e file:/home/kroger/Inbox/music254
+   - bash, python, awk (refazer tudo em python?)
+   - abcm2ps
+   - [[http://humdrum.org/Humdrum/commands/ditto.html][ditto]]
+   - [[http://extra.humdrum.org/man/sonority/][sonority]]
+   - [[http://humdrum.org/Humdrum/commands/hint.html][hint]]
+   - [[http://extra.humdrum.org/man/hgrep/][hgrep]]
+   - [[http://humdrum.org/Humdrum/commands/yank.html][yank]]
+* aula 03: 31 mar
+* aula 04: 07 abr
+* aula 05: 14 abr
+* aula 06: 21 abr: feriado{tiradentes}
+* aula 07: 28 abr
+* aula 08: 05 mai
+* aula 09: 12 mai
+* aula 10: 19 mai
+* aula 11: 26 mai  consultas trabalho final
+* aula 12: 02 jun: feriado{corpus christi}
+* aula 13: 09 jun  consultas trabalho final
+* aula 14: 16 jun  apresentação trabalho final
+* aula 15: 23 jun: feriado{São joão}

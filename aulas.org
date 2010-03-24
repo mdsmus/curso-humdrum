@@ -3,6 +3,7 @@
 * aula 01: 17 mar
 ** introdução a humdrum
 * aula 02: 24 mar
+** repo do curso: http://github.com/kroger/curso-humdrum
 ** recursos humdrum na internet
    http://humdrum.ccarh.org/
 ** trabalho final: entrega e apresentação dia 16 jun

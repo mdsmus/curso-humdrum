@@ -4,9 +4,9 @@
 ** introdução a humdrum
 * aula 02: 24 mar
 ** repo do curso: http://github.com/kroger/curso-humdrum
+** trabalho final: entrega e apresentação dia 16 jun
 ** recursos humdrum na internet
    http://humdrum.ccarh.org/
-** trabalho final: entrega e apresentação dia 16 jun
 ** apresentação comandos: [[http://humdrum.org/Humdrum/commands/yank.html][yank]] e [[http://humdrum.org/Humdrum/commands/extract.html][extract]]
 ** exemplo de uso (desktop): comparação quartetos
    [[/home/kroger/Documents/bin/humdrum-tools.sh][humdrum-tools.sh]] e file:/home/kroger/Inbox/music254
@@ -18,10 +18,11 @@
    - [[http://extra.humdrum.org/man/hgrep/][hgrep]]
    - [[http://humdrum.org/Humdrum/commands/yank.html][yank]]
 * aula 03: 31 mar
+** Apresentações: Jean (ditto), Marcos (sonority)
 * aula 04: 07 abr
 * aula 05: 14 abr
 * aula 06: 21 abr: feriado{tiradentes}
-* aula 07: 28 abr
+* aula 07: 28 abr  definir topico do trabalho
 * aula 08: 05 mai
 * aula 09: 12 mai
 * aula 10: 19 mai

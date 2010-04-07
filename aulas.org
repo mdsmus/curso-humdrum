@@ -21,6 +21,8 @@
 ** Apresentações: Jean (ditto), Marcos (sonority)
 * aula 04: 07 abr
 * aula 05: 14 abr
+** Apresentações: Jean (trans), Marcos (mkeyscape)
+** Trabalho: escolha 1 movimento, fazer analise de sonoridade (sonority e hint)
 * aula 06: 21 abr: feriado{tiradentes}
 * aula 07: 28 abr  definir topico do trabalho
 * aula 08: 05 mai
@@ -31,3 +33,5 @@
 * aula 13: 09 jun  consultas trabalho final
 * aula 14: 16 jun  apresentação trabalho final
 * aula 15: 23 jun: feriado{São joão}
+* Idéias projetos
+** fazer script para identificar compositores usando tabela de frequencias

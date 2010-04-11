@@ -1,0 +1,24 @@
+#!/usr/bin/python
+
+import os, sys, string
+
+if len(sys.argv) == 1:
+    f = sys.stdin.read().split("\n")
+else:
+    f = open(sys.argv[1]).read().split("\n")
+
+def remove_duplicates(seq): 
+    keys = {} 
+    for e in seq: 
+        keys[e] = 1 
+    return keys.keys()
+
+def sort_intervals(a, b):
+    "Assume intervals have 2 chars."
+    return cmp(a[1],b[1])
+
+for line in f:
+    l = remove_duplicates(line.split(" "))
+    l.sort(sort_intervals)
+    if line != '':
+        print string.join(l, " ")

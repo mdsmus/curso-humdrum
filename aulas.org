@@ -32,9 +32,25 @@
    - [[http://humdrum.org/Humdrum/commands/mint.html][mint]], [[http://humdrum.org/Humdrum/commands/deg.html][deg]], [[http://humdrum.org/Humdrum/commands/degree.html][degree]], [[http://humdrum.org/Humdrum/commands/semits.html][semits]]
 * aula 06: 21 abr: feriado{tiradentes}
 * aula 07: 28 abr  definir topico do trabalho
-* aula 08: 05 mai
+** sample
+Sample the musical texture at every 8th-note:
+sample -r 8 chor001.krn
+
+Sample with a rhythmic cycle:
+sample -r"4. 8" chor001.krn
+
+Sample the musical texture at every 8th-note, removing duplicate successive sonorities:
+sample -r 8 chor001.krn | uniq
+
+Remove most non-triadic sonorities:
+sample -r 8 chor001.krn | uniq | sonority -ta | grep -v X
+[Slow tempo by half by changing *MM100 to *MM50]
+
+Remove all non-triadic sonorities (except dominant 7th):
+sample -r 8 chor001.krn | uniq | sonority -ta | egrep -v “minm|majm|X|inc" | sed ‘s/MM100/MM50/g’
+* aula 08: 05 mai: visualização
 * aula 09: 12 mai
-* aula 10: 19 mai
+* aula 10: 19 mai  consultas trabalho final
 * aula 11: 26 mai  consultas trabalho final
 * aula 12: 02 jun: feriado{corpus christi}
 * aula 13: 09 jun  consultas trabalho final

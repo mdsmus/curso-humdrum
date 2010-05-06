@@ -8,7 +8,7 @@ def parse_file(file):
     with open(file) as f:
         tmp = []
         for line in f:
-            if not line.startswith("!") or not line.startswith("=") or not line.startswith("*"):
+            if not line.startswith("!") and not line.startswith("=") and not line.startswith("*"):
                 tmp.append([item.strip('\n') for item in line.split('\t')])
         return tmp
 
@@ -27,7 +27,6 @@ def all_notes(filename):
                     acc = match.group(2)
                     if n != "r":
                         tmp.append("".join(set(n.lower())) + acc.replace("n", ""))
-    tmp.sort()
     return tmp
 
 

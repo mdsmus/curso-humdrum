@@ -3,31 +3,20 @@
 import re
 from collections import defaultdict
 
+note = re.compile("([a-gA-G]+)([n#-]*)")
 
-def parse_file(file):
+def all_notes(file):
     with open(file) as f:
         tmp = []
         for line in f:
             if not line.startswith("!") and not line.startswith("=") and not line.startswith("*"):
-                tmp.append([item.strip('\n') for item in line.split('\t')])
-        return tmp
-
-
-def all_notes(filename):
-    full = parse_file(filename)
-    note = re.compile("([a-gA-G]+)([n#-]*)")
-    tmp = []
-    
-    for line in full:
-        for i in line:
-            if i != ".":
-                match = note.search(i)
-                if match:
-                    n = match.group(1)
-                    acc = match.group(2)
-                    if n != "r":
+                for item in line.split('\t'):
+                    match = note.search(item)
+                    if match:
+                        n = match.group(1)
+                        acc = match.group(2)
                         tmp.append("".join(set(n.lower())) + acc.replace("n", ""))
-    return tmp
+        return tmp
 
 
 def count_notes(list_of_notes):
@@ -39,7 +28,11 @@ def count_notes(list_of_notes):
     return dic
 
 
-dic = count_notes(all_notes("wtc-1/wtc1f01.krn"))
-lst = [(dic[key], key) for key in dic]
-lst.sort(key=lambda x: x[0])
+def print_count(file):
+    dic = count_notes(all_notes(file))
+    tmp = dic.items()
+    tmp.sort(key=lambda x: x[1])
+    print tmp
 
+
+print_count("wtc-1/wtc1f01.krn")
